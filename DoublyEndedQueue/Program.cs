@@ -22,7 +22,7 @@ namespace DoublyEndedQueue
 
             Console.WriteLine("--------- Print Deque -------------");
 
-            bool flip = false;            
+            bool flip = true;            
             while(deque.Count > 0)
             {
                 if (flip)

@@ -141,6 +141,48 @@ namespace DoublyLinkList
             return true;
         }
 
+        public bool RemoveHead()
+        {
+            if(Head != null)
+            {
+                if(Head.Next != null)
+                {
+                    Head = Head.Next;
+                    Head.Prevoius = null;
+                }
+                else
+                {
+                    Head = null;
+                    Tail = null;
+                }
+                Count--;
+                return true;
+            }
+            
+
+            return false;
+        }
+
+        public bool RemoveTail()
+        {
+            if(Tail != null)
+            {
+                if(Tail.Prevoius == null)
+                {
+                    Tail = null;
+                    Head = null;
+                }
+                else
+                {
+                    Tail = Tail.Prevoius;
+                    Tail.Next.Prevoius = null;
+                }
+                Count--;
+                return true;
+            }
+
+            return false;
+        }
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();

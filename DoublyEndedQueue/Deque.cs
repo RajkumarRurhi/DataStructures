@@ -22,7 +22,7 @@ namespace DoublyEndedQueue
         public T DequeueHead()
         {
             T item = PeekHead();
-            store.Remove(item);
+            store.RemoveHead();
 
             return item;
         }
@@ -30,7 +30,7 @@ namespace DoublyEndedQueue
         public T DequeueTail()
         {
             T item = PeekTail();
-            store.Remove(item);
+            store.RemoveTail();
 
             return item;
         }

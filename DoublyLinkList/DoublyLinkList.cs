@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DoublyLinkList
 {
-    internal class DoublyLinkList<T> :ICollection<T>
+    public class DoublyLinkList<T> :ICollection<T>
     {
         public Node<T> Head { get; private set; }
         public Node<T> Tail { get; private set; }
@@ -115,7 +115,10 @@ namespace DoublyLinkList
             if(previous == null)
             {
                 Head = next;
-                Head.Prevoius = null;
+                if(Head != null)
+                {
+                    Head.Prevoius = null;
+                }
             }
             else
             {
@@ -125,13 +128,16 @@ namespace DoublyLinkList
             if(next == null)
             {
                 Tail = previous;
-                Tail.Next = null;
+                if(Tail != null)
+                {
+                    Tail.Next = null;
+                }
             }
             else
             {
                 next.Prevoius = previous;
             }
-
+            Count--;
             return true;
         }
 

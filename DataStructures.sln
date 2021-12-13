@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyLinkList", "DoublyLinkList\DoublyLinkList.csproj", "{FA463C44-6CB8-4504-8647-047CC3CBC72C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoublyLinkList", "DoublyLinkList\DoublyLinkList.csproj", "{FA463C44-6CB8-4504-8647-047CC3CBC72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyEndedQueue", "DoublyEndedQueue\DoublyEndedQueue.csproj", "{1FF210F5-60EC-4F3D-AD44-6F58CE836589}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FA463C44-6CB8-4504-8647-047CC3CBC72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA463C44-6CB8-4504-8647-047CC3CBC72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA463C44-6CB8-4504-8647-047CC3CBC72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF210F5-60EC-4F3D-AD44-6F58CE836589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF210F5-60EC-4F3D-AD44-6F58CE836589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF210F5-60EC-4F3D-AD44-6F58CE836589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF210F5-60EC-4F3D-AD44-6F58CE836589}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

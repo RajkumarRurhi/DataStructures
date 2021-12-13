@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DoublyLinkList
 {
-    internal class Node<T>
+    public class Node<T>
     {
         public Node(T value)
         {
